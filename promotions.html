@@ -222,19 +222,19 @@ desired effect
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
                 <li>
-                    <a href="index.html" title="List of computers">
+                    <a href="index.html" title="list of computers">
                         <i class="fa fa-tv"></i>
                         <span>Computers</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="administrators.html" title="Manager for administrators">
+                <li>
+                    <a href="administrators.html" title="management for administrators">
                         <i class="fa  fa-users"></i>
                         <span>Administrators</span>
                     </a>
                 </li>
-                <li>
-                    <a href="promotions.html" title="Manager for promotions">
+                <li class="active">
+                    <a href="promotions.html" title="management for promotions">
                         <i class="fa fa-gift"></i>
                         <span>Promotions</span>
                     </a>
@@ -250,12 +250,12 @@ desired effect
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Administrators
-                <small>Manager for administrators</small>
+                Promotions
+                <small>Manager for promotions</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Administrators</li>
+                <li class="active">Promotions</li>
             </ol>
         </section>
 
@@ -265,102 +265,36 @@ desired effect
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Administrators Information</h3>
+                            <h3 class="box-title">Promotions Information</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <button type="button" class="btn btn-primary margin-bottom" data-toggle="modal"
-                                    data-target="#modal-add-user" title="Add a new administrator">
-                                <i class="fa  fa-user-plus"></i>
+                                    data-target="#modal-add-user" title="A a new promotion">
+                                <i class="fa fa-plus"></i>
                             </button>
                             <table id="datatables" class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
-                                    <th>NO.</th>
                                     <th>ID</th>
                                     <th>Name</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
+                                    <th>Content</th>
+                                    <th>Time</th>
                                     <th>Status</th>
                                     <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>adm01</td>
-                                    <td>Nguyen Van A</td>
-                                    <td>0912619243</td>
-                                    <td>anv@email.com</td>
+                                    <td>EV1</td>
+                                    <td>Top up increase</td>
+                                    <td>Increase money more 20% when
+                                        top up any card at the net
+                                    </td>
+                                    <td>01/11/2018 - 10/11/2018</td>
                                     <td class="text-center">
                                         <button class="btn btn-success" name="btn-status-en" title="Click to disable">
                                             <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
-                                    <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
-                                            <i class="fa fa-edit"></i>
-                                            Edit
-                                        </button>
-                                        <button type="button" class="btn btn-danger" title="Click to delete">
-                                            <i class="fa fa-remove"></i>
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>adm02</td>
-                                    <td>Tran Van B</td>
-                                    <td>0912619243</td>
-                                    <td>btv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-danger" name="btn-status-en" title="Click to enable">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                    </td>
-                                    <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
-                                            <i class="fa fa-edit"></i>
-                                            Edit
-                                        </button>
-                                        <button type="button" class="btn btn-danger" title="Click to delete">
-                                            <i class="fa fa-remove"></i>
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>adm03</td>
-                                    <td>Le Van C</td>
-                                    <td>0912619243</td>
-                                    <td>clv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-success" name="btn-status-en" title="Click to disable">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
-                                    <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
-                                            <i class="fa fa-edit"></i>
-                                            Edit
-                                        </button>
-                                        <button type="button" class="btn btn-danger" title="Click to delete">
-                                            <i class="fa fa-remove"></i>
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>adm04</td>
-                                    <td>Ngo Van D</td>
-                                    <td>0912619243</td>
-                                    <td>dnv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-danger" name="btn-status-en" title="Click to enable">
-                                            <i class="fa fa-close"></i>
                                         </button>
                                     </td>
                                     <td class="text-center">
@@ -402,7 +336,7 @@ desired effect
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Add a administrator</h4>
+                                <h4 class="modal-title">Add a promotion</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
@@ -410,10 +344,15 @@ desired effect
                                            autofocus>
                                     <input type="text" class="form-control margin-bottom" placeholder="Name"
                                            tabindex="2">
-                                    <input type="tel" class="form-control margin-bottom" placeholder="Phone"
+                                    <input type="text" class="form-control margin-bottom" placeholder="Content"
                                            tabindex="3">
-                                    <input type="email" class="form-control margin-bottom" placeholder="Email"
+                                    <input type="date" class="form-control margin-bottom" placeholder="Time"
                                            tabindex="4">
+                                    <div class="form-inline">
+                                        <input id="status" type="checkbox" class="checkbox" title="Enable">
+                                        <label for="status" class="font-light">Enable</label>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="modal-footer">
