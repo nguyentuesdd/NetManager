@@ -308,7 +308,8 @@ desired effect
                                             <i class="fa fa-edit"></i>
                                             Edit
                                         </button>
-                                        <button type="button" class="btn btn-danger" title="Click to delete">
+                                        <button type="button" class="btn btn-danger" title="Click to delete" data-toggle="modal"
+                                    data-target="#modal-delete-promotion">
                                             <i class="fa fa-remove"></i>
                                             Delete
                                         </button>
@@ -372,6 +373,30 @@ desired effect
                 </div>
                 <!-- /.modal-dialog -->
             </div>
+            
+             <div class="modal fade" id="modal-delete-promotion">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h3 class="modal-title">Delete promotions</h3>
+                                <h4>Do you want delete promotions?</h4>
+                                
+                            </div>
+                           
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-reddit" data-dismiss="modal">Close
+                                </button>
+                                <button type="submit" class="btn btn-danger" >Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                   </div>
+                </div>
+                
+                
         </section>
         <!-- /.content -->
     </div>
