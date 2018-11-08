@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Net Manager | List Computers</title>
+    <title>Net Manager | User</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -221,7 +221,7 @@ desired effect
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li>
+                <li class="active">
                     <a href="user.html" title="create accounts">
                         <i class="fa fa-user"></i>
                         <span>User</span>
@@ -233,7 +233,7 @@ desired effect
                         <span>Computers</span>
                     </a>
                 </li>
-                <li class="active">
+                <li >
                     <a href="administrators.html" title="Manager for administrators">
                         <i class="fa  fa-users"></i>
                         <span>Administrators</span>
@@ -256,12 +256,12 @@ desired effect
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Administrators
-                <small>Manager for administrators</small>
+              User
+                <small>Manager for user</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Administrators</li>
+                <li class="active">User</li>
             </ol>
         </section>
 
@@ -271,15 +271,16 @@ desired effect
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Administrators Information</h3>
+                            <h3 class="box-title">User Information</h3>
                         </div>
                         <!-- /.box-header -->
-                        <div class="box-body">
-                            <button type="button" class="btn btn-primary margin-bottom" data-toggle="modal"
-                                    data-target="#modal-add-user" title="Add a new administrator">
+                         <div class="box-body">
+                    <button type="button" class="btn btn-primary margin-bottom" data-toggle="modal"
+                                    data-target="#modal-add-user" title="Add a new user">
                                 <i class="fa  fa-user-plus"></i>
                             </button>
-                            <table id="datatables" class="table table-bordered table-hover">
+                            
+                               <table id="datatables" class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
                                     <th>NO.</th>
@@ -287,22 +288,18 @@ desired effect
                                     <th>Name</th>
                                     <th>Phone</th>
                                     <th>Email</th>
-                                    <th>Status</th>
+                                    <th>Pass</th>
                                     <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>adm01</td>
-                                    <td>Nguyen Van A</td>
-                                    <td>0912619243</td>
-                                    <td>anv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-success" name="btn-status-en" title="Click to disable">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
+                                    <td>user01</td>
+                                    <td>Lung Van Nen</td>
+                                    <td>0989999999</td>
+                                    <td>lungvannen@gmail.com</td>
+                                    <td>99999*****</td>
                                     <td class="text-center">
                                         <button class="btn btn-default" title="Click to edit">
                                             <i class="fa fa-edit"></i>
@@ -316,15 +313,11 @@ desired effect
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>adm02</td>
-                                    <td>Tran Van B</td>
-                                    <td>0912619243</td>
-                                    <td>btv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-danger" name="btn-status-en" title="Click to enable">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                    </td>
+                                    <td>user02</td>
+                                    <td>Tran Thi Lu</td>
+                                    <td>0987777777</td>
+                                    <td>tranthilu@gmail.com</td>
+                                    <td>77777*****</td>
                                     <td class="text-center">
                                         <button class="btn btn-default" title="Click to edit">
                                             <i class="fa fa-edit"></i>
@@ -338,15 +331,11 @@ desired effect
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>adm03</td>
-                                    <td>Le Van C</td>
-                                    <td>0912619243</td>
-                                    <td>clv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-success" name="btn-status-en" title="Click to disable">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
+                                    <td>user03</td>
+                                    <td>Le Van Cung</td>
+                                    <td>0986666666</td>
+                                    <td>levancung@gmail.com</td>
+                                    <td>66666*****</td>
                                     <td class="text-center">
                                         <button class="btn btn-default" title="Click to edit">
                                             <i class="fa fa-edit"></i>
@@ -360,15 +349,11 @@ desired effect
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>adm04</td>
-                                    <td>Ngo Van D</td>
-                                    <td>0912619243</td>
-                                    <td>dnv@email.com</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-danger" name="btn-status-en" title="Click to enable">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                    </td>
+                                    <td>user04</td>
+                                    <td>Ngo Van Alu</td>
+                                    <td>0985555555</td>
+                                    <td>ngovanalu.com</td>
+                                    <td>55555*****</td>
                                     <td class="text-center">
                                         <button class="btn btn-default" title="Click to edit">
                                             <i class="fa fa-edit"></i>
@@ -381,34 +366,18 @@ desired effect
                                     </td>
                                 </tr>
                                 </tbody>
-                                <tfoot>
-                                <tr>
-                                    <th>NO.</th>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
-                                    <th></th>
-                                </tr>
-                                </tfoot>
+                               
                             </table>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-            </div>
-            <!-- /.row -->
-
-            <div class="modal fade" id="modal-add-user">
+                            
+  
+      <div class="modal fade" id="modal-add-user">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <form action="">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Add a administrator</h4>
+                                <h4 class="modal-title">Add a user</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
@@ -420,6 +389,10 @@ desired effect
                                            tabindex="3">
                                     <input type="email" class="form-control margin-bottom" placeholder="Email"
                                            tabindex="4">
+                                    <input type="passwork" class="form-control margin-bottom" placeholder="Passwork"
+                                           tabindex="4">
+                                    <input type="repasswork" class="form-control margin-bottom" placeholder="Repeat Password"
+                                           tabindex="4">
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -429,6 +402,10 @@ desired effect
                             </div>
                         </form>
                     </div>
+                    
+                </div>
+                
+            </div>
                     <!-- /.modal-content -->
                 </div>
                 <!-- /.modal-dialog -->
