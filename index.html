@@ -159,15 +159,15 @@ desired effect
               <li class="user-header"> <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 <p> Alexander Pierce - Web Developer <small>Member since Nov. 2012</small> </p>
               </li>
-              <!-- Menu Body -->
+              <!-- Menu Body --> 
               <!-- <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center"> <a href="#">Followers</a> </div>
                   <div class="col-xs-4 text-center"> <a href="#">Sales</a> </div>
                   <div class="col-xs-4 text-center"> <a href="#">Friends</a> </div>
-                </div> -->
-                <!-- /.row --> 
-             <!-- </li> -->
+                </div> --> 
+              <!-- /.row --> 
+              <!-- </li> --> 
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left"> <a href="#" class="btn btn-default btn-flat">Profile</a> </div>
@@ -207,6 +207,7 @@ desired effect
       <!-- /.search form --> 
       
       <!-- Sidebar Menu -->
+<<<<<<< HEAD
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
@@ -236,6 +237,17 @@ desired effect
                 </li>
             </ul>
             <!-- /.sidebar-menu --> 
+=======
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li> <a href="register.html" title="create accounts"> <i class="fa fa-user"></i> <span>Register</span> </a> </li>
+        <li class="active"> <a href="index.html" title="list of computers"> <i class="fa fa-tv"></i> <span>Computers</span> </a> </li>
+        <li> <a href="administrators.html" title="management for administrators"> <i class="fa fa-users"></i> <span>Administrators</span> </a> </li>
+        <li> <a href="promotions.html" title="management for promotions"> <i class="fa fa-gift"></i> <span>Promotions</span> </a> </li>
+      </ul>
+      <!-- /.sidebar-menu --> 
+>>>>>>> 69ecfbb8c9ef3690dcc2dc762949262ed18a7406
     </section>
     <!-- /.sidebar --> 
   </aside>
@@ -244,10 +256,10 @@ desired effect
   <div class="content-wrapper"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> List Computers <small>Management</small> </h1>
+      <h1>Computers <small>Management</small> </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">ListComputers</li>
+        <li class="active">Computers</li>
       </ol>
     </section>
     
@@ -258,20 +270,28 @@ desired effect
         | Your Page Content Here |
         -------------------------->
       <div class="row">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-1">Note:</div>
+        <div class="col-sm-1"><span><i class="fa fa-square text-green"></i> : Online</span></div>
+        <div class="col-sm-1"><span><i class="fa fa-square text-yellow"></i> : Lock</span></div>
+        <div class="col-sm-1"><span><i class="fa fa-square text-gray"></i> : Offline</span></div>
+      </div>
+      <div class="row">
+        
         <div class="col-sm-3 checkbox">
           <label>
             <input type="checkbox" value="" checked>
             See offline computer</label>
         </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-1"><label for="sel1" style="float:right">Sort:</label></div>
-        <div class="col-sm-3">
-          	<select class="form-control" id="sel1">
-                <option>Online</option>
-                <option>Lock</option>
-                <option>Offline</option>
-          	</select>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-1">
+          <label for="sel1" style="float:right">Sort:</label>
+        </div>
+        <div class="col-sm-2">
+          <select class="form-control" id="sel1">
+            <option>Online</option>
+            <option>Lock</option>
+            <option>Offline</option>
+          </select>
         </div>
       </div>
       <div class="row">
@@ -285,13 +305,6 @@ desired effect
           <h3 class="text-center" style="margin-top:-20px; "></h3>
         </div>
       </div>
-      
-      <div class="row">
-      	<div class="col-sm-1">Note:</div>
-        <div class="col-sm-1"><span><i class="fa fa-square text-green"></i> : Online</span></div>
-        <div class="col-sm-1"><span><i class="fa fa-square text-yellow"></i> : Lock</span></div>
-        <div class="col-sm-1"><span><i class="fa fa-square text-gray"></i> : Offline</span></div>
-      </div>
     </section>
     <!-- /.content --> 
   </div>
@@ -302,7 +315,8 @@ desired effect
     <!-- To the right -->
     <div class="pull-right hidden-xs"> <b>Version</b> 1.0.0 </div>
     <!-- Default to the left --> 
-    <strong>Copyright &copy; 2018 <a href="#">Education</a>.</strong> All rights reserved. </footer>
+    <strong>Copyright &copy; 2018 <a href="https://hci2018group07.azurewebsites.net">Group 7 Human Computer
+            Interaction</a>.</strong> All rights reserved. </footer>
   
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark"> 
