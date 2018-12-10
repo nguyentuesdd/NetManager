@@ -387,16 +387,14 @@ desired effect
                                             <th>Quantity</th>
                                         </tr>
                                         <tr>
-                                        	<td colspan="2">
-                                            	Start time: Tue 2018-12-11 07:25:39
-                                            </td>
+                                        	<td>Start time:</td>
+                                            <td>Tue 2018-12-11 07:25:39</td>
                                             <td>Coffee</td>
                                             <td>1</td>
                                         </tr>
                                         <tr>
-                                        	<td colspan="2">
-                                            	End time: <span id="time"></span>
-                                            </td>
+                                        	<td>End time:</td>
+                                            <td id="time"></td>
                                             <td>Coca Cola</td>
                                             <td>2</td>
                                         </tr>
@@ -520,6 +518,7 @@ function startTime() {
   var d = today.getDate();
   var mo = today.getMonth() + 1;
   var y = today.getFullYear();
+  h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
   d = checkTime(d);
