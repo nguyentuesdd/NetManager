@@ -563,7 +563,7 @@ desired effect
                             <div class="modal-header">
                                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Add a promotion</h4>
+                                <h4 class="modal-title">Add a service</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
@@ -571,8 +571,11 @@ desired effect
                                            type="text">
                                     <input class="form-control margin-bottom" placeholder="Name" tabindex="2"
                                            type="text">
-                                    <input class="form-control margin-bottom" placeholder="Content" tabindex="3"
-                                           type="text">
+                                    <select class="form-control margin-bottom" id="category" name="category">
+                                        <option value="Food">Food</option>
+                                        <option value="Beverage">Beverage</option>
+                                        <option value="Card">Card</option>
+                                    </select>
                                     <input class="form-control margin-bottom" placeholder="Time" tabindex="4"
                                            type="date">
                                     <div class="form-inline">
