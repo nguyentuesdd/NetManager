@@ -60,7 +60,7 @@ desired effect
 |---------------------------------------------------------|
 -->
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" onload="startTime()">
 <div class="wrapper">
 
     <!-- Main Header -->
@@ -371,12 +371,14 @@ desired effect
                                 <div class="modal-header">
                                     <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                                         <span aria-hidden="true">&times;</span></button>
-                                    <h3 class="modal-title">Checkout computer</h3>
-                                    <h3>User: Tran Ro Vau</h3>
-                                    <h4></h4>
-
+                                    <h3 class="modal-title">C1 Computer</h3>
                                 </div>
-
+								<div class="modal-body">
+                                	<h4>User: Tran Ro Vau</h4>
+                                    <h4>Start time: Tue 2018-12-11 07:25:39</h4>
+                                    <h4>End time: <span id="time"></span></h4>
+                                    <h4>Amount: $20</h4>
+                                </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-reddit" data-dismiss="modal" type="button">Close
                                     </button>
@@ -470,7 +472,29 @@ desired effect
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
-
+<script>
+function startTime() {
+  var today = new Date();
+  var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var d = today.getDate();
+  var mo = today.getMonth() + 1;
+  var y = today.getFullYear();
+  m = checkTime(m);
+  s = checkTime(s);
+  d = checkTime(d);
+  mo = checkTime(mo);
+  document.getElementById('time').innerHTML =
+  days[today.getDay()] + " " + y + "-" + mo + "-" + d + " " + h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 <!-- jQuery 3 -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
