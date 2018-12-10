@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Net Manager | Manager Computers</title>
+<title>Net Manager | Manager Mouses</title>
 <link rel="icon"
           href="images/logo.png"
           type="image/png" sizes="16x16">
@@ -223,10 +223,10 @@ desired effect
         <li><a href="administrators.html" title="management for administrators"><i class="fa  fa-users"></i> <span>Administrators</span></a></li>
         <li class="treeview active"><a href="assets.html"><i class="fa fa-link"></i> <span>Assets</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span></a>
           <ul class="treeview-menu">
-            <li class="active"><a href="assets.html"><i class="fa fa-desktop"></i> <span>Manager computers</span></a></li>
+            <li><a href="assets.html"><i class="fa fa-desktop"></i> <span>Manager computers</span></a></li>
             <li><a href="headphone.html"><i class="fa fa-headphones"></i> <span>Manager headphones</span></a></li>
             <li><a href="keyboard.html"><i class="fa fa-keyboard-o"></i> <span>Manager keyboards</span></a></li>
-            <li><a href="mouse.html"><i class="material-icons" style="font-size:medium">&#xe323;</i> <span>Manager mouses</span></a></li>
+            <li class="active"><a href="mouse.html"><i class="material-icons" style="font-size:medium">&#xe323;</i> <span>Manager mouses</span></a></li>
             <li><a href="chair.html"><i class="fa fa-couch"></i> <span>Manager chairs</span></a></li>
           </ul>
         </li>
@@ -257,11 +257,11 @@ desired effect
   <div class="content-wrapper"> 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>Computers <small>Management</small> </h1>
+      <h1>Mouses <small>Management</small> </h1>
       <ol class="breadcrumb">
         <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="assets.html">Assets</a></li>
-        <li class="active">Computers</li>
+        <li class="active">Mouses</li>
       </ol>
     </section>
     
@@ -272,7 +272,7 @@ desired effect
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">Computers Information</h3>
+                            <h3 class="box-title">Mouses Information</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -283,25 +283,21 @@ desired effect
                             <table id="datatables" class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
-                                    <th title="ID">ID</th>
                                     <th title="Name">Name</th>
                                     <th title="Company">Company</th>
-                                    <th title="Status">Status</th>
+                                    <th title="Quantity">Quantity</th>
+                                    <th title="Quantity of fail">Fail</th>
                                     <th title="Note">Note</th>
                                     <th title="Action"></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>001</td>
-                                    <td>C1</td>
-                                    <td>DELL</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-success" name="btn-status-en" title="Good">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
-                                    <td></td>
+                                    <td>Logitech G500</td>
+                                    <td>Logitech</td>
+                                    <td>20</td>
+                                    <td>0</td>
+                                    <td>10 items in stock (unused)</td>
                                     <td class="text-center">
                                         <button class="btn btn-default" title="Click to edit">
                                             <i class="fa fa-edit"></i>
@@ -315,15 +311,11 @@ desired effect
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>002</td>
-                                    <td>C2</td>
-                                    <td>DELL</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-success" name="btn-status-en" title="Good">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
-                                    <td></td>
+                                    <td>Razer Deathadder</td>
+                                    <td>Razer</td>
+                                    <td>35</td>
+                                    <td>0</td>
+                                    <td>10 items in stock (unused)</td>
                                     <td class="text-center">
                                         <button class="btn btn-default" title="Click to edit">
                                             <i class="fa fa-edit"></i>
@@ -331,50 +323,6 @@ desired effect
                                         </button>
                                         <button type="button" class="btn btn-danger" title="Click to delete" data-toggle="modal"
                                     data-target="#modal-delete-user">
-                                            <i class="fa fa-remove"></i>
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>003</td>
-                                    <td>C3</td>
-                                    <td>HP</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-success" name="btn-status-en" title="Good">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                    </td>
-                                    <td></td>
-                                    <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
-                                            <i class="fa fa-edit"></i>
-                                            Edit
-                                        </button>
-                                        <button type="button" class="btn btn-danger" title="Click to delete" data-toggle="modal"
-                                    data-target="#modal-delete-user">
-                                            <i class="fa fa-remove"></i>
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>004</td>
-                                    <td>C4</td>
-                                    <td>DELL</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-danger" name="btn-status-en" title="Fail">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                    </td>
-                                    <td>Broken mouse</td>
-                                    <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
-                                            <i class="fa fa-edit"></i>
-                                            Edit
-                                        </button>
-                                        <button type="button" class="btn btn-danger" title="Click to delete"
-                                        data-toggle="modal" data-target="#modal-delete-user">
                                             <i class="fa fa-remove"></i>
                                             Delete
                                         </button>
@@ -383,10 +331,10 @@ desired effect
                                 </tbody>
                                 <tfoot>
                                 <tr>
-                                    <th title="ID">ID</th>
                                     <th title="Name">Name</th>
                                     <th title="Company">Company</th>
-                                    <th title="Status">Status</th>
+                                    <th title="Quantity">Quantity</th>
+                                    <th title="Quantity of fail">Fail</th>
                                     <th title="Note">Note</th>
                                     <th title="Action"></th>
                                 </tr>
@@ -412,16 +360,14 @@ desired effect
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <input type="text" class="form-control margin-bottom" placeholder="ID" tabindex="1"
-                                           autofocus title="ID">
-                                    <input type="text" class="form-control margin-bottom" placeholder="Name"
-                                           tabindex="2" title="Name">
+                                    <input type="text" class="form-control margin-bottom" placeholder="Name" tabindex="1"
+                                           autofocus title="Name">
                                     <input type="text" class="form-control margin-bottom" placeholder="Company"
-                                           tabindex="3" title="Company">
-                                    <select class="form-control margin-bottom" name="status" tabindex="4" title="Status">
-                                    	<option selected>Status - Good</option>
-        								<option>Status - Fail</option>
-                                    </select>
+                                           tabindex="2" title="Company">
+                                    <input type="number" class="form-control margin-bottom" placeholder="Quantity"
+                                           tabindex="3" title="Quantity">
+                                    <input type="number" class="form-control margin-bottom" placeholder="Fail"
+                                           tabindex="4" title="Quantity of fail">
                                     <textarea class="form-control" rows="5" placeholder="Note" title="Note" tabindex="5"></textarea>
                                 </div>
                             </div>
