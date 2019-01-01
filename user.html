@@ -238,17 +238,11 @@ desired effect
           </ul>
         </li>
         <li> <a href="promotions.html" title="Manager for promotions"> <i class="fa fa-gift"></i> <span>Promotions</span> </a> </li>
-        <li class="treeview">
-          <a href="services.html" title="management for services">
-            <i class="fa fa-shopping-cart"></i>
-            <span>Services</span>
-            <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
-          </a>
+        <li class="treeview"> <a href="services.html" title="management for services"> <i class="fa fa-shopping-cart"></i> <span>Services</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
           <ul class="treeview-menu">
             <li><a href="services.html#food"><i class="fa fa-utensils"></i> <span>Manager foods</span></a></li>
             <li><a href="services.html#beverage"><i class="fa fa-coffee"></i> <span>Manager beverages</span></a></li>
-            <li><a href="services.html#card"><i class="fa fa-credit-card"></i> <span>Manager top up cards</span></a>
-            </li>
+            <li><a href="services.html#card"><i class="fa fa-credit-card"></i> <span>Manager top up cards</span></a> </li>
           </ul>
         </li>
       </ul>
@@ -333,8 +327,26 @@ desired effect
                                     data-target="#modal-delete-user" > <i class="fa fa-remove"></i> Delete </button></td>
               </tr>
             </tbody>
+            <tfoot>
+              <tr>
+                <th>NO.</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th></th>
+              </tr>
+            </tfoot>
           </table>
-          <div class="modal fade" id="modal-add-user">
+         </div>
+         </div>
+          <!-- edit--> 
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      
+       <div class="modal fade" id="modal-add-user">
             <div class="modal-dialog">
               <div class="modal-content">
                 <form action="">
@@ -504,20 +516,15 @@ desired effect
               </div>
             </div>
           </div>
-          <!-- edit--> 
-          <!-- /.modal-content --> 
-        </div>
-        <!-- /.modal-dialog --> 
-      </div>
     </section>
     <!-- /.content --> 
   </div>
   <!-- /.content-wrapper --> 
   
   <!-- Main Footer -->
-  <footer class="main-footer"> 
+   <footer class="main-footer"> 
     <!-- To the right -->
-    <div class="pull-right hidden-xs"><b>Version</b> 1.0.0</div>
+    <div class="pull-right hidden-xs"> <b>Version</b> 1.0.0 </div>
     <!-- Default to the left --> 
     <strong>Copyright &copy; 2018 <a href="https://hci2018group07.azurewebsites.net">Group 7 Human Computer
     Interaction</a>.</strong> All rights reserved. </footer>
@@ -535,25 +542,23 @@ desired effect
       <div class="tab-pane active" id="control-sidebar-home-tab">
         <h3 class="control-sidebar-heading">Recent Activity</h3>
         <ul class="control-sidebar-menu">
-          <li><a href="javascript:void(0)"> <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+          <li><a href="javascript:"> <i class="menu-icon fa fa-birthday-cake bg-red"></i>
             <div class="menu-info">
               <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
               <p>Will be 23 on April 24th</p>
             </div>
-            </a></li>
+            </a> </li>
         </ul>
         <!-- /.control-sidebar-menu -->
         
         <h3 class="control-sidebar-heading">Tasks Progress</h3>
         <ul class="control-sidebar-menu">
-          <li><a href="javascript:void(0)">
-            <h4 class="control-sidebar-subheading"> Custom Template Design <span
-                                class="pull-right-container"> <span
-                                class="label label-danger pull-right">70%</span> </span></h4>
+          <li><a href="javascript:">
+            <h4 class="control-sidebar-subheading"> Custom Template Design <span class="pull-right-container"> <span class="label label-danger pull-right">70%</span> </span> </h4>
             <div class="progress progress-xxs">
               <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
             </div>
-            </a></li>
+            </a> </li>
         </ul>
         <!-- /.control-sidebar-menu --> 
         
@@ -580,35 +585,35 @@ desired effect
   </aside>
   <!-- /.control-sidebar --> 
   <!-- Add the sidebar's background. This div must be placed
-    immediately after the control sidebar -->
+  immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper --> 
 
 <!-- REQUIRED JS SCRIPTS --> 
 
-<!-- jQuery 3 --> 
-<script src="bower_components/jquery/dist/jquery.min.js"></script> 
-<!-- Bootstrap 3.3.7 --> 
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
-<!-- DataTables --> 
-<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script> 
-<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script> 
-<!-- SlimScroll --> 
-<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script> 
-<!-- FastClick --> 
-<script src="bower_components/fastclick/lib/fastclick.js"></script> 
-<!-- AdminLTE App --> 
-<script src="dist/js/adminlte.min.js"></script> 
-<!-- AdminLTE for demo purposes --> 
-<script src="dist/js/demo.js"></script> 
-<!-- page script --> 
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- page script -->
 <script>
     $(function () {
         $('#datatables').DataTable()
     })
-</script> 
-<!--DataTables delete-->
+</script>
 
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
 </body>
 </html>
