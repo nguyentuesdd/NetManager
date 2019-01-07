@@ -366,12 +366,172 @@ desired effect
                 </div>
                 <div class="modal-footer">
                   <button class="btn btn-reddit" data-dismiss="modal" type="button">Close </button>
-                  <button class="btn btn-primary" type="submit">Checkout</button>
+                  <a data-target="#checkout" data-toggle="modal">
+                  <button class="btn btn-primary" type="submit">Checkout</button></a>
                 </div>
               </form>
             </div>
           </div>
         </div>
+        <!--/. checkout -->
+         <div class="modal fade" id="checkout">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form action="">
+                <div class="modal-header">
+                  <button aria-label="Close" class="close" data-dismiss="modal" type="button"> <span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title">C1 Computer</h3>
+                </div>
+                <div class="modal-body"> 
+                  <!--<h4>User: Tran Ro Vau</h4>
+                                    <h4>Start time: Tue 2018-12-11 07:25:39</h4>
+                                    <h4>End time: <span id="times"></span></h4>
+                                    <h4>Amount: $20</h4>-->
+                  <table class="table table-borderless">
+                    <tr>
+                      <th colspan="2"> PAY CASH </th>
+                      <th>PAY CARD</th>
+                      
+                    </tr>
+                    <tr>
+                    
+                    </tr>
+                    <tr>
+                    <td> 
+                     <a data-target="#paycash" data-toggle="modal">
+                    <img alt="User Image" class="img-lg"	src="images/paycash.jpg"></a>
+                     </td>
+                       
+                     <td colspan="2"> <a data-target="#paycard" data-toggle="modal"><img alt="User Image" class="img-lg"	src="images/paycard.png"></a></td>
+                     </td>
+                  
+                    </tr>       
+                 <tr>
+                  
+                      <th colspan="2"> Amount: </th>
+                      <th colspan="2"> $20 </th>
+                    </tr>
+                  </table>
+                </div>
+                <div class="modal-footer">
+               <button class="btn btn-reddit" data-dismiss="modal" type="button">Close </button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="submit">Close</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--/. end checkout-->
+        <!--/. paycash -->
+         <div class="modal fade" id="paycash">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form action="">
+                <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"> <span aria-hidden="true">&times;</span></button>  
+                  <h3 class="modal-title">C1 Computer</h3>
+                </div>
+                <div class="modal-body"> 
+                  <!--<h4>User: Tran Ro Vau</h4>
+                                    <h4>Start time: Tue 2018-12-11 07:25:39</h4>
+                                    <h4>End time: <span id="times"></span></h4>
+                                    <h4>Amount: $20</h4>-->
+                  <table class="table table-borderless">
+                   
+                    <tr>
+                    <div class="modal-body">
+                    <div class="form-group">
+                      <input type="text" class="form-control margin-bottom" placeholder="Account" tabindex="1"
+                                           autofocus>
+                      <input type="text" class="form-control margin-bottom" placeholder="Money"
+                                           tabindex="2">
+                      
+                    </div>
+                  </div>
+                    </tr>
+                        
+                 <tr>
+                  
+                      <th colspan="2"> Amount: </th>
+                      <th colspan="2"> $20 </th>
+                    </tr>
+                  </table>
+                </div>
+                <div class="modal-footer">
+               <button class="btn btn-reddit" data-dismiss="modal" type="button">Close </button>
+                 <a data-target="#modal-pay" data-toggle="modal">
+                  <button class="btn btn-primary" type="submit">Paycash</button></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--/. end paycash-->
+        <!--/. paycard -->
+         <div class="modal fade" id="paycard">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form action="">
+                <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"> <span aria-hidden="true">&times;</span></button>  
+                  <h3 class="modal-title">C1 Computer</h3>
+                </div>
+                <div class="modal-body"> 
+                  <!--<h4>User: Tran Ro Vau</h4>
+                                    <h4>Start time: Tue 2018-12-11 07:25:39</h4>
+                                    <h4>End time: <span id="times"></span></h4>
+                                    <h4>Amount: $20</h4>-->
+                  <table class="table table-borderless">
+                   
+                    <tr>
+                     <div class="modal-body">
+                    <div class="form-group">
+                      <input type="text" class="form-control margin-bottom" placeholder="ID Card" tabindex="1"
+                                           autofocus>
+                      <input type="text" class="form-control margin-bottom" placeholder="Pass" tabindex="1"
+                                           autofocus>
+                      <input type="text" class="form-control margin-bottom" placeholder="Money"
+                                           tabindex="2">
+                      
+                    </div>
+                  </div>
+                    </tr>
+                       
+                 <tr>
+                  
+                      <th colspan="2"> Amount: </th>
+                      <th colspan="2"> $20 </th>
+                    </tr>
+                  </table>
+                </div>
+                <div class="modal-footer">
+               <button class="btn btn-reddit" data-dismiss="modal" type="button">Close </button>
+                 <a data-target="#modal-pay" data-toggle="modal">
+                  <button class="btn btn-primary" type="submit">Paycarh</button></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--/. end paycard-->
+         <div class="modal fade" id="modal-pay">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form action="">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">Messenger</h3>
+                    <h4>You want to pay?</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-reddit" data-dismiss="modal">No</button>
+                    <button type="submit" class="btn btn-danger" >Yes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- edit-->
       </div>
     </section>
     <!-- /.content --> 
