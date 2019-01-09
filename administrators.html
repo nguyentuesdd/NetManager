@@ -267,12 +267,12 @@ desired effect
                         <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="services.html#food"><i class="fa fa-utensils"></i> <span>Manager foods</span></a>
+                        <li><a href="services/food.html"><i class="fa fa-utensils"></i> <span>Manage foods</span></a>
                         </li>
-                        <li><a href="services.html#beverage"><i class="fa fa-coffee"></i> <span>Manager beverages</span></a>
+                        <li><a href="services/beverage.html"><i class="fa fa-coffee"></i> <span>Manage beverages</span></a>
                         </li>
-                        <li><a href="services.html#card"><i class="fa fa-credit-card"></i>
-                            <span>Manager top up cards</span></a></li>
+                        <li><a href="services/card.html"><i class="fa fa-credit-card"></i>
+                            <span>Manage cards</span></a></li>
                     </ul>
                 </li>
                  <li class="treeview"> <a href="#"> <i class="fa fa-pie-chart"></i> <span>Charts</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
@@ -295,10 +295,10 @@ desired effect
         <section class="content-header">
             <h1>
                 Administrators
-                <small>Manager for administrators</small>
+                <small>Manage for administrators</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active">Administrators</li>
             </ol>
         </section>
@@ -314,7 +314,7 @@ desired effect
                         <!-- /.box-header -->
                         <div class="box-body">
                             <button type="button" class="btn btn-primary margin-bottom" data-toggle="modal"
-                                    data-target="#modal-add-user" title="Add a new administrator">
+                                    data-target="#modal-add-administrator" title="Add a new administrator">
                                 <i class="fa  fa-user-plus"></i>
                             </button>
                             <table id="datatables" class="table table-bordered table-hover">
@@ -333,8 +333,8 @@ desired effect
                                 <tr>
                                     <td>1</td>
                                     <td>adm01</td>
-                                    <td>Nguyen Van A</td>
-                                    <td>0912619243</td>
+                                    <td>Nguyen Van Anh</td>
+                                    <td>0912453754</td>
                                     <td>anv@email.com</td>
                                     <td class="text-center">
                                         <button class="btn btn-success" name="btn-status-en" title="Click to disable">
@@ -342,7 +342,8 @@ desired effect
                                         </button>
                                     </td>
                                     <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
+                                        <button class="btn btn-default" data-target="#modal-edt-a1" data-toggle="modal"
+                                                title="Click to edit">
                                             <i class="fa fa-edit"></i>
                                             Edit
                                         </button>
@@ -356,8 +357,8 @@ desired effect
                                 <tr>
                                     <td>2</td>
                                     <td>adm02</td>
-                                    <td>Tran Van B</td>
-                                    <td>0912619243</td>
+                                    <td>Tran Van Binh</td>
+                                    <td>0775322216</td>
                                     <td>btv@email.com</td>
                                     <td class="text-center">
                                         <button class="btn btn-danger" name="btn-status-en" title="Click to enable">
@@ -365,7 +366,8 @@ desired effect
                                         </button>
                                     </td>
                                     <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
+                                        <button class="btn btn-default" data-target="#modal-edt-a2" data-toggle="modal"
+                                                title="Click to edit">
                                             <i class="fa fa-edit"></i>
                                             Edit
                                         </button>
@@ -379,8 +381,8 @@ desired effect
                                 <tr>
                                     <td>3</td>
                                     <td>adm03</td>
-                                    <td>Le Van C</td>
-                                    <td>0912619243</td>
+                                    <td>Le Van Cuong</td>
+                                    <td>0562548337</td>
                                     <td>clv@email.com</td>
                                     <td class="text-center">
                                         <button class="btn btn-success" name="btn-status-en" title="Click to disable">
@@ -388,7 +390,8 @@ desired effect
                                         </button>
                                     </td>
                                     <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
+                                        <button class="btn btn-default" data-target="#modal-edt-a3" data-toggle="modal"
+                                                title="Click to edit">
                                             <i class="fa fa-edit"></i>
                                             Edit
                                         </button>
@@ -402,8 +405,8 @@ desired effect
                                 <tr>
                                     <td>4</td>
                                     <td>adm04</td>
-                                    <td>Ngo Van D</td>
-                                    <td>0912619243</td>
+                                    <td>Ngo Van Dung</td>
+                                    <td>0212619243</td>
                                     <td>dnv@email.com</td>
                                     <td class="text-center">
                                         <button class="btn btn-danger" name="btn-status-en" title="Click to enable">
@@ -411,7 +414,8 @@ desired effect
                                         </button>
                                     </td>
                                     <td class="text-center">
-                                        <button class="btn btn-default" title="Click to edit">
+                                        <button class="btn btn-default" data-target="#modal-edt-a4" data-toggle="modal"
+                                                title="Click to edit">
                                             <i class="fa fa-edit"></i>
                                             Edit
                                         </button>
@@ -443,7 +447,7 @@ desired effect
             </div>
             <!-- /.row -->
 
-            <div class="modal fade" id="modal-add-user">
+            <div class="modal fade" id="modal-add-administrator">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <form action="">
@@ -454,14 +458,163 @@ desired effect
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <input type="text" class="form-control margin-bottom" placeholder="ID" tabindex="1"
-                                           autofocus>
                                     <input type="text" class="form-control margin-bottom" placeholder="Name"
+                                           autofocus tabindex="1">
+                                    <input class="form-control margin-bottom" placeholder="Phone" type="tel"
                                            tabindex="2">
+                                    <input class="form-control margin-bottom" placeholder="Email" tabindex="3"
+                                           type="email">
+                                    <div class="form-inline">
+                                        <input class="checkbox" id="status" tabindex="4" title="Enable" type="checkbox">
+                                        <label class="font-light" for="status">Enable</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default pull-left" data-dismiss="modal" type="button">Close
+                                </button>
+                                <button class="btn btn-primary" type="submit">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+            <div class="modal fade" id="modal-edt-a1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Edit the information of administrator</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input class="form-control margin-bottom" disabled placeholder="ID"
+                                           type="text" value="admin01">
+                                    <input autofocus class="form-control margin-bottom" placeholder="Name"
+                                           tabindex="1" type="text" value="Nguyen Van Anh">
                                     <input type="tel" class="form-control margin-bottom" placeholder="Phone"
-                                           tabindex="3">
+                                           tabindex="2" value="0912453754">
+                                    <input class="form-control margin-bottom" placeholder="Email" tabindex="3"
+                                           type="email" value="anv@email.com">
+                                    <div class="form-inline">
+                                        <input checked="checked" class="checkbox" tabindex="4" title="Enable"
+                                               type="checkbox">
+                                        <label class="font-light" for="status">Enable</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default pull-left" data-dismiss="modal" type="button">Close
+                                </button>
+                                <button class="btn btn-primary" type="submit">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <div class="modal fade" id="modal-edt-a2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Edit the information of administrator</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input class="form-control margin-bottom" disabled placeholder="ID"
+                                           type="text" value="admin02">
+                                    <input autofocus class="form-control margin-bottom" placeholder="Name"
+                                           tabindex="1" type="text" value="Tran Van Binh">
+                                    <input class="form-control margin-bottom" placeholder="Phone" tabindex="2"
+                                           type="tel" value="0775322216">
+                                    <input class="form-control margin-bottom" placeholder="Email" tabindex="3"
+                                           type="email" value="btv@email.com">
+                                    <div class="form-inline">
+                                        <input class="checkbox" tabindex="4" title="Enable" type="checkbox">
+                                        <label class="font-light" for="status">Enable</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default pull-left" data-dismiss="modal" type="button">Close
+                                </button>
+                                <button class="btn btn-primary" type="submit">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <div class="modal fade" id="modal-edt-a3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Edit the information of administrator</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input class="form-control margin-bottom" disabled placeholder="ID"
+                                           type="text" value="admin03">
+                                    <input autofocus class="form-control margin-bottom" placeholder="Name"
+                                           tabindex="1" type="text" value="Le Van Cuong">
+                                    <input class="form-control margin-bottom" placeholder="Phone" tabindex="2"
+                                           type="tel" value="0562548337">
+                                    <input class="form-control margin-bottom" placeholder="Email" tabindex="3"
+                                           type="email" value="clv@email.com">
+                                    <div class="form-inline">
+                                        <input checked="checked" class="checkbox" tabindex="4" title="Enable"
+                                               type="checkbox">
+                                        <label class="font-light" for="status">Enable</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default pull-left" data-dismiss="modal" type="button">Close
+                                </button>
+                                <button class="btn btn-primary" type="submit">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <div class="modal fade" id="modal-edt-a4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Edit the information of administrator</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input class="form-control margin-bottom" disabled placeholder="ID"
+                                           type="text" value="admin04">
+                                    <input autofocus class="form-control margin-bottom" placeholder="Name"
+                                           tabindex="1" type="text" value="Ngo Van Dung">
+                                    <input class="form-control margin-bottom" placeholder="Phone" tabindex="2"
+                                           type="tel" value="0212619243">
                                     <input type="email" class="form-control margin-bottom" placeholder="Email"
-                                           tabindex="4">
+                                           tabindex="3" value="dnv@email.com">
+                                    <div class="form-inline">
+                                        <input class="checkbox" tabindex="4" title="Enable" type="checkbox">
+                                        <label class="font-light" for="status">Enable</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -475,7 +628,6 @@ desired effect
                 </div>
                 <!-- /.modal-dialog -->
             </div>
-            
              <div class="modal fade" id="modal-delete-user">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -483,8 +635,8 @@ desired effect
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h3 class="modal-title">Delete user</h3>
-                                <h4>Do you want delete user?</h4>
+                                <h3 class="modal-title">Confirm delete administrator</h3>
+                                <h4>Do you want delete this administrator?</h4>
                                 
                             </div>
                            
@@ -596,7 +748,11 @@ desired effect
 <script>
     $(function () {
         $('#datatables').DataTable()
-    })
+    });
+    // Every time a modal is shown, if it has an autofocus element, focus on it.
+    $('.modal').on('shown.bs.modal', function () {
+        $(this).find('[autofocus]').focus();
+    });
 </script>
 </body>
 </html>
