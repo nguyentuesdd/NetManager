@@ -303,14 +303,128 @@
       </ol>
     </section>
 
-    <!-- Main content -->
-    <section class="content">       
-      <div class="row">
-        <div class="col-md-6">
+<section class="content">
+      <div class="row" style="padding-top:10px">
+        <div class="col-xs-12"> 
+          
+          <!-- interactive chart -->
+          <div class="box">
+            <h4 style="text-align:center;padding-bottom:10px">Statistics of the number of revenue per month</h4>
+            <table class="table table-bordered">
+              <tr>
+                <th style="background:#3c8dbc">Month</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <th style="background:#3c8dbc">Net revenue</th>
+                <td>80</td>
+                <td>100</td>
+                <td>60</td>
+                <td>130</td>
+                <td>170</td>
+                <td>125</td>
+                <td>50</td>
+                <td>100</td>
+                <td>160</td>
+                <td>145</td>
+                <td>130</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <th style="background:#3c8dbc">Amount</th>
+                <td>100</td>
+                <td>120</td>
+                <td>90</td>
+                <td>150</td>
+                <td>200</td>
+                <td>170</td>
+                <td>60</td>
+                <td>110</td>
+                <td>190</td>
+                <td>165</td>
+                <td>140</td>
+                <td>95</td>
+              </tr>
+            </table>
+          </div>
+          <!-- /.box --> 
+          
+        </div>
+        <!-- /.col --> 
+      </div>
+      <!-- /.row -->
+      <div class="row" style="padding-top:20px">
+        <div class="col-md-3"> 
+          <!-- Line chart -->
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Month</h3>
+            </div>
+            <div class="box-body">
+              <div class="w3-content w3-display-container">
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="#">January</a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="#"> February</a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:80px">
+                <a href="#"> March </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:85px">
+                <a href="#"> April </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:85px">
+                <a href="#"> May</a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:85px">
+                <a href="#">June </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:85px">
+                <a href="#"> July</a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:80px">
+                <a href="#"> August </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="#"> September </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="#"> October</a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="#"> November </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="#"> December </a>
+                </button>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+            </div>
+            <!-- /.box-body--> 
+          </div>
+          <!-- /.box --> 
+          
+        </div>
+        <!-- /.col -->
+        
+        <div class="col-md-9"> 
           <!-- AREA CHART -->
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Area Chart</h3>
+              <h3 class="box-title">Morris Chart</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -324,71 +438,33 @@
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
+          
+        </div>
+        <!-- /.col --> 
+      </div>
+      <!-- /.row --> 
+    </section>
+    <!-- /.content --> 
 
-          <!-- DONUT CHART -->
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Donut Chart</h3>
 
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body chart-responsive">
-              <div class="chart" id="sales-chart" style="height: 300px; position: relative;"></div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
+    <!-- Main content -->
+    <section class="content">       
+      <div class="row">
+        <div class="col-md-6">
+          
+          
 
         </div>
         <!-- /.col (LEFT) -->
-        <div class="col-md-6">
-          <!-- LINE CHART -->
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Line Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body chart-responsive">
-              <div class="chart" id="line-chart" style="height: 300px;"></div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- BAR CHART -->
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Bar Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body chart-responsive">
-              <div class="chart" id="bar-chart" style="height: 300px;"></div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-        </div>
-        <!-- /.col (RIGHT) -->
+       
       </div>
       <!-- /.row -->
 
     </section>
     <!-- /.content -->
+    
+    
+    
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -499,20 +575,20 @@
       element: 'revenue-chart',
       resize: true,
       data: [
-        {y: '2011 Q1', item1: 2666, item2: 2666},
-        {y: '2011 Q2', item1: 2778, item2: 2294},
-        {y: '2011 Q3', item1: 4912, item2: 1969},
-        {y: '2011 Q4', item1: 3767, item2: 3597},
-        {y: '2012 Q1', item1: 6810, item2: 1914},
-        {y: '2012 Q2', item1: 5670, item2: 4293},
-        {y: '2012 Q3', item1: 4820, item2: 3795},
-        {y: '2012 Q4', item1: 15073, item2: 5967},
-        {y: '2013 Q1', item1: 10687, item2: 4460},
-        {y: '2013 Q2', item1: 8432, item2: 5713}
+        {y: '2017 Q1', Revenue: 2666, Amount: 2666},
+        {y: '2017 Q2', Revenue: 2778, Amount: 2294},
+        {y: '2017 Q3', Revenue: 4912, Amount: 1969},
+        {y: '2017 Q4', Revenue: 3767, Amount: 3597},
+        {y: '2018 Q1', Revenue: 6810, Amount: 1914},
+        {y: '2018 Q2', Revenue: 5670, Amount: 4293},
+        {y: '2018 Q3', Revenue: 4820, Amount: 3795},
+        {y: '2018 Q4', Revenue: 15073, Amount: 5967},
+        {y: '2019 Q1', Revenue: 10687, Amount: 4460},
+        
       ],
       xkey: 'y',
-      ykeys: ['item1', 'item2'],
-      labels: ['Item 1', 'Item 2'],
+      ykeys: ['Revenue', 'Amount'],
+      labels: ['Revenue', 'Amount'],
       lineColors: ['#a0d0e0', '#3c8dbc'],
       hideHover: 'auto'
     });
@@ -522,16 +598,16 @@
       element: 'line-chart',
       resize: true,
       data: [
-        {y: '2011 Q1', item1: 2666},
-        {y: '2011 Q2', item1: 2778},
-        {y: '2011 Q3', item1: 4912},
-        {y: '2011 Q4', item1: 3767},
-        {y: '2012 Q1', item1: 6810},
-        {y: '2012 Q2', item1: 5670},
-        {y: '2012 Q3', item1: 4820},
-        {y: '2012 Q4', item1: 15073},
-        {y: '2013 Q1', item1: 10687},
-        {y: '2013 Q2', item1: 8432}
+        {y: '2017 Q1', item1: 2666},
+        {y: '2017 Q2', item1: 2778},
+        {y: '2017 Q3', item1: 4912},
+        {y: '2017 Q4', item1: 3767},
+        {y: '2018 Q1', item1: 6810},
+        {y: '2018 Q2', item1: 5670},
+        {y: '2018 Q3', item1: 4820},
+        {y: '2018 Q4', item1: 15073},
+        {y: '2019 Q1', item1: 10687},
+       
       ],
       xkey: 'y',
       ykeys: ['item1'],
@@ -573,6 +649,73 @@
 
     });
   });
+</script>
+<script>
+  $(function () {
+  
+
+    /*
+     * BAR CHART
+     * ---------
+     */
+
+    var bar_data = {
+      data : [['January', 100], ['February', 120], ['March', 90], ['April', 150], ['May', 200], ['June', 170], ['July', 60], ['August', 110], ['September', 190], ['October', 165], ['November', 140], ['December', 95]],
+      color: '#3c8dbc'
+    }
+    $.plot('#bar-chart', [bar_data], {
+      grid  : {
+        borderWidth: 1,
+        borderColor: '#f3f3f3',
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+        bars: {
+          show    : true,
+          barWidth: 0.5,
+          align   : 'center'
+        }
+      },
+      xaxis : {
+        mode      : 'categories',
+        tickLength: 0
+      }
+    })
+    /* END BAR CHART */
+
+   
+
+  })
+
+  /*
+   * Custom Label formatter
+   * ----------------------
+   */
+  function labelFormatter(label, series) {
+    return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
+      + label
+      + '<br>'
+      + Math.round(series.percent) + '%</div>'
+  }
+</script> 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 </script>
 </body>
 </html>
