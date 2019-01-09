@@ -278,7 +278,7 @@
          <li class="treeview"> <a href="#"> <i class="fa fa-pie-chart"></i> <span>Charts</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
           <ul class="treeview-menu">
     <li><a href="userChart.html"><i class="far fa-circle"></i> User Chart</a></li>
-            <li><a href="morris.html"><i class="far fa-circle"></i> Morris Chart</a></li>
+            <li><a href="revenueChart.html"><i class="far fa-circle"></i> Revenue Chart</a></li>
            
       
           </ul>
@@ -293,13 +293,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Morris Charts
+       Revenue Charts
         <small>Preview sample</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Charts</a></li>
-        <li class="active">Morris</li>
+        <li class="active">Revenue chart</li>
       </ol>
     </section>
 
@@ -309,7 +309,7 @@
           
           <!-- interactive chart -->
           <div class="box">
-            <h4 style="text-align:center;padding-bottom:10px">Statistics of the number of revenue per month</h4>
+            <h4 style="text-align:center;padding-bottom:10px">Statistics of revenue per month</h4>
             <table class="table table-bordered">
               <tr>
                 <th style="background:#3c8dbc">Month</th>
@@ -342,7 +342,7 @@
                 <td>85</td>
               </tr>
               <tr>
-                <th style="background:#3c8dbc">Amount</th>
+                <th style="background:#3c8dbc">Revenue</th>
                 <td>100</td>
                 <td>120</td>
                 <td>90</td>
@@ -424,7 +424,7 @@
           <!-- AREA CHART -->
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Morris Chart</h3>
+              <h3 class="box-title">Revenue Chart</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -434,6 +434,7 @@
             </div>
             <div class="box-body chart-responsive">
               <div class="chart" id="revenue-chart" style="height: 300px;"></div>
+              <h4 style="text-align:center">Statistics of the revenue</h4>
             </div>
             <!-- /.box-body -->
           </div>
@@ -575,20 +576,20 @@
       element: 'revenue-chart',
       resize: true,
       data: [
-        {y: '2017 Q1', Revenue: 2666, Amount: 2666},
-        {y: '2017 Q2', Revenue: 2778, Amount: 2294},
-        {y: '2017 Q3', Revenue: 4912, Amount: 1969},
-        {y: '2017 Q4', Revenue: 3767, Amount: 3597},
-        {y: '2018 Q1', Revenue: 6810, Amount: 1914},
-        {y: '2018 Q2', Revenue: 5670, Amount: 4293},
-        {y: '2018 Q3', Revenue: 4820, Amount: 3795},
-        {y: '2018 Q4', Revenue: 15073, Amount: 5967},
-        {y: '2019 Q1', Revenue: 10687, Amount: 4460},
+        {y: '2017 Q1', Revenue: 2666, NetRevenue: 2666},
+        {y: '2017 Q2', Revenue: 2778, NetRevenue: 2294},
+        {y: '2017 Q3', Revenue: 4912, NetRevenue: 1969},
+        {y: '2017 Q4', Revenue: 3767, NetRevenue: 3597},
+        {y: '2018 Q1', Revenue: 6810, NetRevenue: 1914},
+        {y: '2018 Q2', Revenue: 5670, NetRevenue: 4293},
+        {y: '2018 Q3', Revenue: 4820, NetRevenue: 3795},
+        {y: '2018 Q4', Revenue: 15073, NetRevenue: 5967},
+        {y: '2019 Q1', Revenue: 10687, NetRevenue: 4460},
         
       ],
       xkey: 'y',
-      ykeys: ['Revenue', 'Amount'],
-      labels: ['Revenue', 'Amount'],
+      ykeys: ['Revenue', 'NetRevenue'],
+      labels: ['Revenue', 'NetRevenue'],
       lineColors: ['#a0d0e0', '#3c8dbc'],
       hideHover: 'auto'
     });
