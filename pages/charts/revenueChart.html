@@ -308,71 +308,25 @@
         <div class="col-xs-12"> 
           
           <!-- interactive chart -->
-          <div class="box">
-            <h4 style="text-align:center;padding-bottom:10px">Statistics of revenue per quarter</h4>
-            <table class="table table-bordered">
-              <tr>
-                <th style="background:#3c8dbc; color:#FFF">Quarter/Year</th>
-                <td>1/2017</td>
-                <td>2/2017</td>
-                <td>3/2017</td>
-                <td>4/2018</td>
-                <td>1/2018</td>
-                <td>2/2018</td>
-                <td>3/2108</td>
-                <td>4/2018</td>
-                <td>1/2019</td>
-              </tr>
-              
-              <tr>
-                <th style="background:#3c8dbc; color:#FFF">Revenue($)</th>
-                <td>100</td>
-                <td>120</td>
-                <td>90</td>
-                <td>150</td>
-                <td>200</td>
-                <td>170</td>
-                <td>60</td>
-                <td>110</td>
-                <td>190</td>
-                
-              </tr>
-              <tr>
-               <th style="background:#3c8dbc; color:#FFF">Total spending($)</th>
-                <td>70</td>
-                <td>100</td>
-                <td>85</td>
-                <td>100</td>
-                <td>170</td>
-                <td>120</td>
-                <td>50</td>
-                <td>65</td>
-                <td>125</td>
-               
-              </tr>
-              <tr>
-                <th style="background:#3c8dbc; color:#FFF">Net revenue($)</th>
-                <td>30</td>
-                <td>20</td>
-                <td>5</td>
-                <td>50</td>
-                <td>30</td>
-                <td>50</td>
-                <td>10</td>
-                <td>45</td>
-                <td>65</td>
-             
-              </tr>
-            </table>
-          </div>
-          <!-- /.box --> 
+          
+          
+        </div>
+        <!-- /.col --> 
+      </div>
+      <!-- /.row -->
+     <section class="content">
+      <div class="row" style="padding-top:10px">
+        <div class="col-lg-12"> 
+          
+          <!-- interactive chart -->
+         
           
         </div>
         <!-- /.col --> 
       </div>
       <!-- /.row -->
       <div class="row" style="padding-top:20px">
-        <div class="col-md-3"> 
+        <div class="col-md-8"> 
           <!-- Line chart -->
           <div class="box">
             <div class="box-header with-border">
@@ -381,33 +335,41 @@
             <div class="box-body">
               <div class="w3-content w3-display-container">
                 <button class="mySlides" type="button" style="color: blue;margin-left:70px">
-                <a href="#">Q1/2017</a>
+                <a href="userChart.html">January</a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:70px">
-                <a href="#">Q2/2017</a>
+                <a href="userChart.html"> February</a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:80px">
-                <a href="#"> Q3/2017</a>
+                <a href="userChart.html"> March </a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:85px">
-                <a href="#"> Q4/2017 </a>
+                <a href="userChart.html"> April </a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:85px">
-                <a href="#">Q1/2018</a>
+                <a href="userChart.html"> May</a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:85px">
-                <a href="#">Q2/2018</a>
+                <a href="userChart.html">June </a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:85px">
-                <a href="#"> Q3/2018</a>
+                <a href="userChart.html"> July</a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:80px">
-                <a href="#"> Q4/2018</a>
+                <a href="userChart.html"> August </a>
                 </button>
                 <button class="mySlides" type="button" style="color: blue;margin-left:70px">
-                <a href="#"> Q1/2019</a>
+                <a href="userChart.html"> September </a>
                 </button>
-               
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="userChart.html"> October</a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="userChart.html"> November </a>
+                </button>
+                <button class="mySlides" type="button" style="color: blue;margin-left:70px">
+                <a href="userChart.html"> December </a>
+                </button>
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
               </div>
@@ -416,28 +378,170 @@
           </div>
           <!-- /.box --> 
           
-        </div>
-        <!-- /.col -->
         
-        <div class="col-md-9"> 
-          <!-- AREA CHART -->
+       
+
+             
+           
+            
+        
+          <!-- Bar chart -->
           <div class="box">
             <div class="box-header with-border">
+              <div class="row">
+                <div class="col-xs-12">
+                    
+             <i class="fa fa-bar-chart-o"></i>
               <h3 class="box-title">Revenue Chart</h3>
-
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <div class="box-body chart-responsive">
+             <div class="box-body chart-responsive">
               <div class="chart" id="revenue-chart" style="height: 300px;"></div>
               <h4 style="text-align:center">Statistics of the revenue</h4>
             </div>
-            <!-- /.box-body -->
+            <!-- /.box-body--> 
           </div>
-          <!-- /.box -->
+          <!-- /.box --> 
+          
+        </div>
+        <!-- /.col --> 
+      </div>
+      <!-- /.row --> 
+        </div>
+        
+        <div class="col-md-4"> 
+          <!-- Bar chart -->
+          <div class="box">
+            <div class="box-header with-border">
+              <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Statistical</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                            	<b class="col-sm-4">Filter date:</b>
+                                <input type="date" class="col-sm-2" value="2018-12-07">
+                            </div>
+                            <br>
+                            
+                            
+                            
+                            
+               
+              
+              
+             
+              <tr>
+               <th style="background:#3c8dbc; color:#FFF"></th>
+                    
+                            <table id="datatables" class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Quarter/Year</th>
+                                    <th>Revenue($)</th>
+                                    <th>Total spending($)</th>
+                                    <th>Net revenue($)</th>
+                                   
+                                   
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1/2017</td>
+                                    <td>100</td>
+                                     <td>70</td>
+                                      <td>30</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>2/2017</td>
+                                    <td>120</td>
+                                     <td>100</td>
+                                      <td>20</td>
+                                     
+                                                                    </tr>
+                                <tr>
+                                    <td>3/2017</td>
+                                    <td>90</td>
+                                     <td>85</td>
+                                      <td>5</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>4/2017</td>
+                                    <td>150</td>
+                                    <td>100</td>
+                                     <td>50</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>1/2018</td>
+                                    <td>200</td>
+                                     <td>170</td>
+                                     <td>30</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>2/2018</td>
+                                    <td>170</td>
+                                     <td>120</td>
+                                     <td>50</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>3/20187</td>
+                                    <td>60</td>
+                                    <td>50</td>
+                                     <td>10</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>4/2018</td>
+                                    <td>110</td>
+                                     <td>65</td>
+                                      <td>45</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>1/2019</td>
+                                    <td>190</td>
+                                    <td>125</td>
+                                     <td>65</td>
+                                    
+                                </tr>
+                                
+                                
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                   <th>Quarter/Year</th>
+                                    <th>Revenue($)</th>
+                                    <th>Total spending($)</th>
+                                    <th>Net revenue($)</th>
+                                   
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+            </div>
+            
+            <!-- /.box-body--> 
+          </div>
+          <!-- /.box --> 
           
         </div>
         <!-- /.col --> 
@@ -445,23 +549,7 @@
       <!-- /.row --> 
     </section>
     <!-- /.content --> 
-
-
-    <!-- Main content -->
-    <section class="content">       
-      <div class="row">
-        <div class="col-md-6">
-          
-          
-
-        </div>
-        <!-- /.col (LEFT) -->
-       
-      </div>
-      <!-- /.row -->
-
-    </section>
-    <!-- /.content -->
+   
     
     
     
